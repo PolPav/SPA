@@ -1,0 +1,177 @@
+html, body {
+  height: 0;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px; }
+
+body {
+  font-size: 1.4em;
+  color: #545454;
+  background-attachment: fixed;
+  background-size: cover; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 1em;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 .5em; }
+
+h3 {
+  font-size: 1.1em;
+  margin: 0 0 .5em; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75; }
+
+a:hover {
+  opacity: 1; }
+
+:focus {
+  box-shadow: 0 0 2px #56774a;
+  outline: none; }
+
+.clearfix:after, .header:after, .content form .client > div:after, .content form .order > div:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/*
+ * Wrapper
+ */
+.wrapper {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  height: 1%;
+  min-height: 90%;
+  width: 100%;
+  max-width: 768px; }
+
+.header {
+  background: #fff; }
+
+.header .nav, .header .cpanel {
+  float: left; }
+
+.header .nav a, .header .cpanel a {
+  display: block;
+  color: #414CC6;
+  float: left;
+  padding: .5em 1em; }
+
+.header .cpanel {
+  float: right; }
+
+.content {
+  box-sizing: border-box;
+  background: #F9F9F9;
+  display: block;
+  padding: 1em;
+  position: relative;
+  width: 100%;
+  min-height: 100%; }
+
+.content .f-center {
+  min-width: 200px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.content table {
+  width: 100%;
+  border-spacing: 0;
+  text-align: center; }
+
+.content table tr {
+  background: #E5E5E5;
+  height: 2.5em; }
+
+.content table tr:hover {
+  background: #DBDBDB;
+  cursor: pointer; }
+
+.content table tr:first-child {
+  background: #7E7EBC;
+  color: #fff; }
+
+.content table tr:last-child {
+  border-bottom: none; }
+
+.content table tr:last-child td {
+  border-bottom: none; }
+
+.content table tr td {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+
+.content table tr td:last-child {
+  border-right: none; }
+
+
+.content form .client, .content form .order {
+  background: #F2F2F2;
+  display: block;
+  border: 1px solid #D6D6D6;
+  padding: 1em;
+  margin: .7em 0 1em; }
+
+.content form .client > div, .content form .order > div {
+  width: 70%; }
+
+.content form .client #pos input, .content form .order #pos input {
+  margin-left: auto; }
+
+.content form .client label, .content form .order label {
+  float: left;
+  box-sizing: border-box;
+  padding: .3em .5em;
+  width: 30%; }
+
+.content form .client input, .content form .client textarea, .content form .client select, .content form .order input, .content form .order textarea, .content form .order select {
+  box-sizing: border-box;
+  border: none;
+  font-size: 1em;
+  display: block;
+  padding: .3em .5em;
+  margin: 0 0 3px;
+  width: 70%; }
+
+.content form .client .error, .content form .order .error {
+    box-shadow: 0 0 5px red;
+    outline: 1px solid red; }
+
+.btn-start {
+  display: block;
+  font-size: 2em;
+  padding: .3em 0;
+  width: 100%; }
+
+.btn-add {
+  display: inline-block;
+  background: #28C928;
+  border-radius: .5em;
+  color: #ffffff;
+  font-size: 1em;
+  padding: .3em 1em;
+  margin: 1em 0; }
+
+.active {
+  background: #F9F9F9; }
+

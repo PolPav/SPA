@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/calendar.js"></script>
+    <script src="../js/create_list.js"></script>
+</head>
+<body onload="init(); get_head()">
+<div class="wrapper">
+    <div class="header">
+        <div class="nav">
+            <a href="../../index.html">Главная</a>
+            <a href="orders_list.html">Список</a>
+            <a href="create_list.html" class="active">Добавить</a>
+        </div>
+        <div class="cpanel">
+            <a>Выйти</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <form action="" onchange="view_id()">
+            <h3 id="head-add"></h3>
+            <div class="client">
+                <h3>Заказчик</h3>
+                <div>
+                    <label for="email">email</label>
+                    <input type="text" id="email" placeholder="aaa@email.com">
+                </div>
+                <div>
+                    <label for="fname">Имя</label>
+                    <input type="text" id="fname" placeholder="Иван">
+                </div>
+                <div>
+                    <label for="lname">Фамилия</label>
+                    <input type="text" id="lname" placeholder="Иванов">
+                </div>
+                <div>
+                    <label for="tel">Моб. номер</label>
+                    <input type="text" id="tel" placeholder="+380">
+                </div>
+            </div>
+            <div class="order">
+                <h3>Заказ</h3>
+                <div>
+                    <label>Позиция</label>
+                    <div id="pos">
+                        <input type="text" name="pos" placeholder="Шариковые ручки">
+                    </div>
+                    <a onclick="add_pos()" class="btn-add"> Добавить новую позицию</a>
+                </div>
+                <div>
+                    <label for="type">Тип заказа</label>
+                    <select name="" id="type">
+                        <option value="Розница">Розница</option>
+                        <option value="Oпт">Опт</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="provider">Поставщик</label>
+                    <input type="text" id="provider">
+                </div>
+                <div>
+                    <label for="idn">ID</label>
+                    <input type="text" id="idn" disabled>
+                </div>
+                <div>
+                    <label for="date">Дата выполнения</label>
+                    <input type="text" id="date"
+                           onclick="event.cancelBubble=true; this.select(); lcs(this)"
+                           onfocus="this.select();lcs(this)" value="dd-mm-yyyy">
+                </div>
+                <div>
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment"></textarea>
+                </div>
+            </div>
+            <a class="btn-add" onclick="check_all()"> Сохранить </a>
+        </form>
+    </div>
+</div>
+</body>
+</html>

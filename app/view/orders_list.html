@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src="../js/create_list.js"></script>
+</head>
+<body onload="init(); set_table()">
+<div class="wrapper">
+    <div class="header">
+        <div class="nav">
+            <a href="../../index.html">Главная</a>
+            <a href="orders_list.html" class="active">Список</a>
+            <a href="create_list.html">Добавить</a>
+        </div>
+        <div class="cpanel">
+            <a href="/exit">Выйти</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <table>
+            <tbody  id="list">
+            <tr>
+                <td>Дата</td>
+                <td>Имя</td>
+                <td>ID</td>
+                <td>Тип</td>
+                <td>Заказчик</td>
+                <td>Поставщик</td>
+                <td>Выполнено</td>
+                <td>Статус</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
